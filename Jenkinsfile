@@ -5,13 +5,13 @@ pipeline {
 
         stage('Validar Python') {
             steps {
-                bat 'py --version'
+                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" --version'
             }
         }
 
         stage('Ejecutar procesamiento') {
             steps {
-                bat 'py scripts/procesamiento.py'
+                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" scripts\\procesamiento.py'
             }
         }
 
